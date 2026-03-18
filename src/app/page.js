@@ -4,127 +4,156 @@ export default function Home() {
   return (
     <main className="bg-white text-gray-800">
 
+      {/* NAVBAR */}
+      <nav className="flex justify-between items-center px-8 py-4 shadow-md">
+        <h1 className="text-xl font-bold text-blue-600">Kineduca</h1>
+
+        <div className="space-x-6 hidden md:flex">
+          <a href="#servicios" className="hover:text-blue-600">Servicios</a>
+          <a href="#pacientes" className="hover:text-blue-600">Pacientes</a>
+          <a href="#nosotros" className="hover:text-blue-600">Nosotros</a>
+          <a href="#contacto" className="hover:text-blue-600">Contacto</a>
+        </div>
+      </nav>
+
       {/* HERO */}
-      <section className="bg-blue-600 text-white py-20 px-6">
+      <section className="bg-blue-600 text-white py-28 px-6">
         <div className="max-w-6xl mx-auto">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            Kineduca
+
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">
+            Terapia Física y Rehabilitación a Domicilio
           </h1>
-          <p className="text-xl mb-6">
-            Terapia Física y Rehabilitación con atención personalizada a domicilio.
+
+          <p className="text-xl mb-8 max-w-xl">
+            Atención personalizada para niños, adultos y tercera edad.
+            Tratamientos profesionales enfocados en mejorar tu calidad de vida.
           </p>
 
           <a
             href="https://wa.me/56995192872"
-            className="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold"
+            className="bg-white text-blue-600 px-7 py-3 rounded-lg font-semibold shadow-md hover:bg-gray-100"
           >
             Contactar por WhatsApp
           </a>
+
         </div>
       </section>
 
       {/* SERVICIOS */}
-      <section className="py-20 px-6">
+      <section id="servicios" className="py-24 px-6">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold mb-10 text-center">
-            Servicios
+
+          <h2 className="text-3xl font-bold text-center mb-16">
+            Servicios de Rehabilitación
           </h2>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-10">
 
-            <div className="p-6 border rounded-xl">
-              <h3 className="font-semibold text-xl mb-2">
-                Kinesiología domiciliaria
+            <div className="p-8 border rounded-xl shadow-sm hover:shadow-md">
+              <h3 className="font-semibold text-xl mb-3">
+                Kinesiología Domiciliaria
               </h3>
               <p>
-                Atención en la comodidad de tu hogar con evaluación y tratamiento personalizado.
+                Tratamientos personalizados en la comodidad de tu hogar,
+                adaptados a tus necesidades de recuperación.
               </p>
             </div>
 
-            <div className="p-6 border rounded-xl">
-              <h3 className="font-semibold text-xl mb-2">
-                Terapia respiratoria
+            <div className="p-8 border rounded-xl shadow-sm hover:shadow-md">
+              <h3 className="font-semibold text-xl mb-3">
+                Terapia Respiratoria
               </h3>
               <p>
-                Tratamiento para mejorar la función pulmonar y recuperación respiratoria.
+                Rehabilitación para mejorar la función pulmonar y apoyar
+                procesos de recuperación respiratoria.
               </p>
             </div>
 
-            <div className="p-6 border rounded-xl">
-              <h3 className="font-semibold text-xl mb-2">
-                Rehabilitación musculoesquelética
+            <div className="p-8 border rounded-xl shadow-sm hover:shadow-md">
+              <h3 className="font-semibold text-xl mb-3">
+                Dolor Crónico
               </h3>
               <p>
-                Tratamiento de lesiones, dolor crónico y recuperación funcional.
+                Tratamiento especializado para aliviar dolor persistente
+                y mejorar la funcionalidad diaria.
               </p>
             </div>
 
-            <div className="p-6 border rounded-xl">
-              <h3 className="font-semibold text-xl mb-2">
-                Estimulación cognitiva
+            <div className="p-8 border rounded-xl shadow-sm hover:shadow-md">
+              <h3 className="font-semibold text-xl mb-3">
+                Rehabilitación Musculoesquelética
               </h3>
               <p>
-                Actividades terapéuticas orientadas a mejorar memoria, atención y funciones cognitivas.
+                Tratamiento de lesiones, recuperación postoperatoria
+                y mejora del movimiento.
               </p>
             </div>
 
-            <div className="p-6 border rounded-xl">
-              <h3 className="font-semibold text-xl mb-2">
-                Rehabilitación integral
+            <div className="p-8 border rounded-xl shadow-sm hover:shadow-md">
+              <h3 className="font-semibold text-xl mb-3">
+                Estimulación Cognitiva
               </h3>
               <p>
-                Programas personalizados de rehabilitación física y funcional.
+                Actividades terapéuticas para fortalecer memoria,
+                atención y habilidades cognitivas.
               </p>
             </div>
 
           </div>
+
         </div>
       </section>
 
       {/* PACIENTES */}
-      <section className="bg-gray-100 py-20 px-6">
+      <section id="pacientes" className="bg-gray-100 py-24 px-6">
+
         <div className="max-w-5xl mx-auto text-center">
 
-          <h2 className="text-3xl font-bold mb-6">
+          <h2 className="text-3xl font-bold mb-8">
             Atención para todas las edades
           </h2>
 
           <p className="text-lg">
-            Brindamos atención especializada para niños, adultos y personas de la tercera edad,
-            adaptando cada tratamiento a las necesidades de cada paciente.
+            Nuestros servicios están orientados a niños, adultos y personas
+            de la tercera edad. Cada tratamiento se adapta a las necesidades
+            específicas de cada paciente.
           </p>
 
         </div>
+
       </section>
 
-      {/* SOBRE NOSOTROS */}
-      <section className="py-20 px-6">
+      {/* NOSOTROS */}
+      <section id="nosotros" className="py-24 px-6">
+
         <div className="max-w-5xl mx-auto text-center">
 
-          <h2 className="text-3xl font-bold mb-6">
+          <h2 className="text-3xl font-bold mb-8">
             Sobre Kineduca
           </h2>
 
-          <p className="text-lg">
-            Kineduca es un servicio de terapia física y rehabilitación enfocado en entregar
-            atención personalizada, educación en salud y programas de recuperación adaptados
-            a cada persona. Nuestro objetivo es mejorar la calidad de vida de los pacientes
-            mediante tratamientos profesionales y cercanos.
+          <p className="text-lg leading-relaxed">
+            Kineduca es un servicio de terapia física y rehabilitación enfocado
+            en brindar atención cercana, profesional y personalizada.
+            Nuestro objetivo es mejorar la calidad de vida de los pacientes
+            mediante tratamientos basados en evidencia y educación en salud.
           </p>
 
         </div>
+
       </section>
 
       {/* CONTACTO */}
-      <section className="bg-blue-600 text-white py-20 px-6">
+      <section id="contacto" className="bg-blue-600 text-white py-24 px-6">
+
         <div className="max-w-4xl mx-auto text-center">
 
-          <h2 className="text-3xl font-bold mb-6">
-            Contacto
+          <h2 className="text-3xl font-bold mb-8">
+            Agenda tu atención
           </h2>
 
-          <p className="text-lg mb-4">
-            Agenda tu atención o solicita más información.
+          <p className="text-lg mb-6">
+            Contáctanos para más información o para coordinar una atención.
           </p>
 
           <p className="text-xl font-semibold">
@@ -136,7 +165,13 @@ export default function Home() {
           </p>
 
         </div>
+
       </section>
+
+      {/* FOOTER */}
+      <footer className="text-center py-6 text-gray-500 text-sm">
+        © {new Date().getFullYear()} Kineduca. Todos los derechos reservados.
+      </footer>
 
     </main>
   )
