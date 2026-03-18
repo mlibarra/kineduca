@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { FaWhatsapp } from "react-icons/fa";
 
 export default function Home() {
   return (
@@ -6,7 +7,17 @@ export default function Home() {
 
       {/* NAVBAR */}
       <nav className="flex justify-between items-center px-8 py-4 shadow-md">
-        <h1 className="text-xl font-bold text-blue-600">Kineduca</h1>
+        <div className="flex items-center gap-3">
+          <Image 
+            src="/logo.png" 
+            alt="Kineduca logo" 
+            width={50} 
+            height={50} 
+          />
+          <span className="text-xl font-bold text-blue-600">
+            Kineduca
+          </span>
+        </div>
 
         <div className="space-x-6 hidden md:flex">
           <a href="#servicios" className="hover:text-blue-600">Servicios</a>
@@ -31,8 +42,10 @@ export default function Home() {
 
           <a
             href="https://wa.me/56995192872"
-            className="bg-white text-blue-600 px-7 py-3 rounded-lg font-semibold shadow-md hover:bg-gray-100"
+            target="_blank"
+            className="flex items-center justify-center gap-2 bg-green-500 text-white px-7 py-3 rounded-lg font-semibold shadow-md hover:bg-green-600"
           >
+            <FaWhatsapp size={20} />
             Contactar por WhatsApp
           </a>
 
@@ -147,6 +160,13 @@ export default function Home() {
       <section id="contacto" className="bg-blue-600 text-white py-24 px-6">
 
         <div className="max-w-4xl mx-auto text-center">
+          <Image 
+            src="/logo.png" 
+            alt="Kineduca logo" 
+            width={80} 
+            height={80} 
+            className="mx-auto mb-6"
+          />
 
           <h2 className="text-3xl font-bold mb-8">
             Agenda tu atención
