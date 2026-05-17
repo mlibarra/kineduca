@@ -1,16 +1,18 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Fraunces, DM_Sans } from "next/font/google";
 import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+ 
+const fraunces = Fraunces({
+  variable: "--font-fraunces",
   subsets: ["latin"],
+  axes: ["opsz"],
 });
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+ 
+const dmSans = DM_Sans({
+  variable: "--font-dm-sans",
   subsets: ["latin"],
+  weight: ["300", "400", "500"],
 });
-
+ 
 export const metadata = {
   title: "Kineduca SpA | Kinesiología Domiciliaria",
   description: "Kinesiología Domiciliaria.",
@@ -18,15 +20,14 @@ export const metadata = {
     icon: "/favicon.ico",
   },
 };
-
+ 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+    <html lang="es">
+      <body className={`${fraunces.variable} ${dmSans.variable} antialiased`}>
         {children}
       </body>
     </html>
   );
 }
+ 
