@@ -87,7 +87,6 @@ const nosotros = [
 ];
 
 const stats = [
-  { value: "6", label: "ESPECIALIDADES" },
   { value: "100%", label: "PERSONALIZADO" },
   { value: "+55", label: "AÑOS FOCO" },
 ];
