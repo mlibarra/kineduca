@@ -15,7 +15,7 @@ export default function Home() {
             height={50} 
           />
           <span className="text-xl font-bold text-blue-600">
-            Kineduca
+            Kineduca SpA
           </span>
         </div>
 
@@ -32,12 +32,12 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
 
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            Terapia Física y Rehabilitación a Domicilio
+            Kinesiología Domiciliaria
           </h1>
 
           <p className="text-xl mb-8 max-w-xl">
-            Atención personalizada para niños, adultos y tercera edad.
-            Tratamientos profesionales enfocados en mejorar tu calidad de vida.
+            Atención profesional personalizada para adultos y personas de tercera edad.
+            Terapia física y rehabilitación enfocada en mejorar tu calidad de vida.
           </p>
 
           <a
@@ -57,7 +57,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
 
           <h2 className="text-3xl font-bold text-center mb-16">
-            Servicios de Rehabilitación
+            Servicios
           </h2>
 
           <div className="grid md:grid-cols-3 gap-10">
@@ -84,11 +84,10 @@ export default function Home() {
 
             <div className="p-8 border rounded-xl shadow-sm hover:shadow-md">
               <h3 className="font-semibold text-xl mb-3">
-                Dolor Crónico
+                Atención Gerontológica
               </h3>
               <p>
-                Tratamiento especializado para aliviar dolor persistente
-                y mejorar la funcionalidad diaria.
+                Tratamiento especializado para el adulto mayor.
               </p>
             </div>
 
@@ -104,11 +103,20 @@ export default function Home() {
 
             <div className="p-8 border rounded-xl shadow-sm hover:shadow-md">
               <h3 className="font-semibold text-xl mb-3">
-                Estimulación Cognitiva
+                Estimulación Cognitiva para el Adulto Mayor
               </h3>
               <p>
                 Actividades terapéuticas para fortalecer memoria,
-                atención y habilidades cognitivas.
+                atención y habilidades cognitivas en personas de tercera edad.
+              </p>
+            </div>
+
+            <div className="p-8 border rounded-xl shadow-sm hover:shadow-md">
+              <h3 className="font-semibold text-xl mb-3">
+                Capacitación
+              </h3>
+              <p>
+                Formación práctica y especializada para fortalecer las habilidades y conocimientos de quienes cuidan personas mayores.
               </p>
             </div>
 
@@ -123,11 +131,11 @@ export default function Home() {
         <div className="max-w-5xl mx-auto text-center">
 
           <h2 className="text-3xl font-bold mb-8">
-            Atención para todas las edades
+            Atención Especializada
           </h2>
 
           <p className="text-lg">
-            Nuestros servicios están orientados a niños, adultos y personas
+            Nuestros servicios están orientados a adultos y personas
             de la tercera edad. Cada tratamiento se adapta a las necesidades
             específicas de cada paciente.
           </p>
@@ -142,11 +150,11 @@ export default function Home() {
         <div className="max-w-5xl mx-auto text-center">
 
           <h2 className="text-3xl font-bold mb-8">
-            Sobre Kineduca
+            Sobre Kineduca SpA
           </h2>
 
           <p className="text-lg leading-relaxed">
-            Kineduca es un servicio de terapia física y rehabilitación enfocado
+            Kineduca SpA es un servicio de terapia física y rehabilitación enfocado
             en brindar atención cercana, profesional y personalizada.
             Nuestro objetivo es mejorar la calidad de vida de los pacientes
             mediante tratamientos basados en evidencia y educación en salud.
@@ -181,7 +189,7 @@ export default function Home() {
           </p>
 
           <p className="mt-2">
-            kineduca@gmail.com
+            contacto@kineduca.cl
           </p>
 
         </div>
@@ -190,7 +198,7 @@ export default function Home() {
 
       {/* FOOTER */}
       <footer className="text-center py-6 text-gray-500 text-sm">
-        © {new Date().getFullYear()} Kineduca. Todos los derechos reservados.
+        © {new Date().getFullYear()} Kineduca SpA. Todos los derechos reservados.
       </footer>
 
     </main>

@@ -12,8 +12,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Kineduca | Kinesiología a Domicilio",
-  description: "Terapia física y rehabilitación a domicilio.",
+  title: "Kineduca SpA | Kinesiología Domiciliaria",
+  description: "Kinesiología Domiciliaria.",
   icons: {
     icon: "/favicon.ico",
   },
