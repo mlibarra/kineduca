@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { FaWhatsapp } from "react-icons/fa";
 
 const fraunces = { fontFamily: "var(--font-fraunces), serif" };
@@ -86,6 +87,7 @@ const nosotros = [
 ];
 
 const stats = [
+  { value: "6", label: "ESPECIALIDADES" },
   { value: "100%", label: "PERSONALIZADO" },
   { value: "+55", label: "AÑOS FOCO" },
 ];
@@ -132,6 +134,7 @@ export default function Home() {
           <a href="#servicios" className="text-sm text-slate-500 hover:text-blue-500 transition-colors">Servicios</a>
           <a href="#pacientes" className="text-sm text-slate-500 hover:text-blue-500 transition-colors">Pacientes</a>
           <a href="#nosotros" className="text-sm text-slate-500 hover:text-blue-500 transition-colors">Nosotros</a>
+          <Link href="/noticias" className="text-sm text-slate-500 hover:text-blue-500 transition-colors">Noticias</Link>
           <a href="#contacto" className="text-sm text-slate-500 hover:text-blue-500 transition-colors">Contacto</a>
         </div>
 
@@ -194,7 +197,6 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Cards flotantes */}
         <div className="relative z-10 flex flex-col gap-4">
           {heroCards.map((card) => (
             <div
